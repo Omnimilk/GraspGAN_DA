@@ -6,7 +6,7 @@ Using GraspGAN to do domain adaptation between simulation and real world as desc
   A convolutional neural network that follows a U-Net architecture. Key techeniques: average pooling for downsampling; bilinear upsampling; concatenation and 1x1 convolutions for the U-Net skip connections and instance normalization.
   
 ## D network:
-  A patch-based(pix2pix, patch size 70x70) CNN with 5 convolutional layers. It is fully convolutional on 3 scales(472x472, 236x236, and 118x118) of the two input images-they are stacked into a 6 channels inputs (70*70*6) which are used to produce domain estimates for all patches. 
+  A patch-based(pix2pix, patch size 70x70) CNN with 5 convolutional layers. It is fully convolutional on 3 scales(472x472, 236x236, and 118x118) of the two input images-they are stacked into a 6 channels inputs (70x70x6) which are used to produce domain estimates for all patches. 
 
 ![GraspGAN](GraspGAN.png)
 
